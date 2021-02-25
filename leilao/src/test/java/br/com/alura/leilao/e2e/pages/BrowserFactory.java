@@ -25,13 +25,13 @@ public class BrowserFactory {
 
 	private  WebDriver initChromeDriver() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\stepp\\Desktop\\curso-bdd\\workspace\\leilao\\drivers\\chromedriver.exe");
+				"C:\\Curso_BDD\\Downloads\\leilao\\drivers\\chromedriver.exe");
 		return new ChromeDriver();
 	}
 
 	private  WebDriver initFirefoxDriver() {
 		System.setProperty("webdriver.gecko.driver",
-				"C:\\Users\\stepp\\Desktop\\curso-bdd\\workspace\\leilao\\drivers\\geckodriver.exe");
+				"C:\\Curso_BDD\\Downloads\\leilao\\drivers\\geckodriver.exe");
 		return new FirefoxDriver();
 	}
 }

@@ -97,8 +97,7 @@ public class Leilao {
 			      .atZone(ZoneId.systemDefault())
 			      .toInstant());
 	}
-	
-	
+		
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
