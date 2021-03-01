@@ -43,6 +43,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java8</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
@@ -132,11 +138,11 @@
 			<artifactId>selenium-api</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.seleniumhq.selenium</groupId>
-		    <artifactId>htmlunit-driver</artifactId>
-		    <scope>test</scope>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
@@ -161,7 +167,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<skipTests>true</skipTests>
-    			</configuration>
+				</configuration>
 				<executions>
 					<execution>
 						<id>unit-tests</id>
@@ -184,10 +190,10 @@
 				</executions>
 			</plugin>
 			<plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-failsafe-plugin</artifactId>
-		        <executions>
-		          <execution>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<executions>
+					<execution>
 						<id>integration-tests</id>
 						<phase>integration-test</phase>
 						<goals>
@@ -205,8 +211,8 @@
 							</excludes>
 						</configuration>
 					</execution>
-		        </executions>
-		      </plugin>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

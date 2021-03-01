@@ -31,7 +31,7 @@ public class PropondoLanceSteps {
 
 	@After
 	public void tearDown() {
-
+		
 	}
 
 	@Dado("um lance valido")

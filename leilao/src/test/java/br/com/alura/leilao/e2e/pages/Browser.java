@@ -22,11 +22,11 @@ public class Browser {
 	}
 
 	public void seed() {
-		driver.get("http://localhost:8080/db/seed");
+		driver.get("http://localhost:8088/db/seed");
 	}
 
 	public void clean() {
-		driver.get("http://localhost:8080/db/clean");
+		driver.get("http://localhost:8088/db/clean");
 		driver.manage().deleteAllCookies();
 		driver.close();
 	}
